@@ -20,7 +20,6 @@ A Nextflow DSL2 module designed to preprocess and standardize results from vario
 
 - **Nextflow** >= 25.10  
 - **Python 3.10+**  
-- Optional: **Conda** or Docker (for reproducible environments)  
 
 ---
 
