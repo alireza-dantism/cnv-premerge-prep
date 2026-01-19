@@ -91,11 +91,16 @@ results/
 ├── 1_trimming_and_normalization/
 ├── 2_column_filtering/
 ├── 3_cn_rounding_and_corrections/
-└── 4_final_results/
+└── 4_type_normalization/
 ```
 
 If `trace=false`, only the final results are kept and intermediate directories are removed.
-
+```text
+results/
+├── sample_1.tsv
+├── sample_2.cns
+└── sample_3.tsv
+```
 ---
 
 # Using the Pipeline as a Module
