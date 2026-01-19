@@ -31,12 +31,12 @@ project/
 ├── bin/
 │   ├── 1_trimming_and_normalization.py
 │   ├── 2_column_filtering.py
-│   └── 3_cn_rounding_and_corrections.py
+│   ├── 3_cn_rounding_and_corrections.py
+│   └── 4_type_normalization.py
 ├── input_files/
 │   ├── sample1.tsv
 │   └── sample2.cns
-├── results/
-└── README.md
+└── results/
 ```
 
 - All Python scripts are in `bin/`  
