@@ -96,8 +96,41 @@ results/
 
 If `trace=false`, only the final results are kept and intermediate directories are removed.
 
+---
 
+# Using the Pipeline as a Module
 
+## Put the workflow in a module folder
+```
+modules/
+└── cnv-premerge-prep/
+    ├── main.nf           # workflow definition
+    └── bin/              # Python scripts (1_trimming_and_normalization.py, etc.)
+```
 
+## Import the module in your main pipeline
+In your main `main.nf` file, include the workflow from the module:
+```
+include { cnv_premerge_prep } from './modules/cnv-premerge-prep/main.nf'
+```
 
+## Set parameters
+Define the parameters that will be passed to the module workflow:
+```
+params.input_dir = "input_files"   // folder containing your input files
+params.trace     = false           // true = keep intermediate results, false = keep only final outputs
+```
+
+## Call the module workflow in your main workflow
+```
+workflow {
+
+    results = cnv_premerge_prep(
+        input_dir: params.input_dir,
+        trace_flag: params.trace
+    )
+
+    // You can continue using 'results' as input for other steps in your main workflow
+}
+```
 
