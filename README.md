@@ -58,17 +58,17 @@ params {
 
 ## Running the Pipeline
 
-### Basic run using defaults
+`Basic run using defaults`
 ```
 nextflow run main.nf
 ```
 
-### Override input directory and trace
+`Override input directory and trace`
 ```
 nextflow run main.nf --input_dir input_files --trace true
 ```
 
-### Resume previous run
+`Resume previous run`
 ```
 nextflow run main.nf -resume
 ```
