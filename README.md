@@ -25,4 +25,18 @@ This pipeline performs **structural variant calling** and copy-number analysis i
 ---
 
 ## Project Structure
+```text
+project/
+├── main.nf
+├── nextflow.config
+├── bin/
+│   ├── 1_trimming_and_normalization.py
+│   ├── 2_column_filtering.py
+│   └── 3_cn_rounding_and_corrections.py
+├── input_files/
+│   ├── sample1.tsv
+│   └── sample2.cns
+├── results/
+└── README.md
+```
 
