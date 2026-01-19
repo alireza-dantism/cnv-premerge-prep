@@ -11,7 +11,7 @@ A Nextflow DSL2 module designed to preprocess and standardize results from vario
 | 1 | `1_trimming_and_normalization.py` | Trims unwanted contigs and normalizes headers of input files |
 | 2 | `2_column_filtering.py` | Keeps only relevant columns (`CHROM`, `START`, `END`, `CN_ESTIMATE`, `TYPE`) |
 | 3 | `3_cn_rounding_and_corrections.py` | Rounds copy-number estimates and applies corrections |
-| 4 | `TYPE_NORMALIZATION` | Performs final type normalization (optional) |
+| 4 | `TYPE_NORMALIZATION` | Performs final type normalization |
 | 5 | `TRACE_HANDLER` | Moves final outputs to top-level results folder; cleans intermediates if `trace=false` |
 
 ---
