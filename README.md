@@ -1,6 +1,6 @@
 # CNV Pre-merge Preparation (Nextflow)
 
-This pipeline performs **structural variant calling** and copy-number analysis in **four steps**, using Python scripts and Nextflow DSL2.
+A Nextflow DSL2 module designed to preprocess and standardize results from various CNV calling packages. It orchestrates a four-step workflow—utilizing Python-based normalization, filtering, and correction scripts—to harmonize data formats and quality before merging multi-caller outputs.
 
 ---
 
