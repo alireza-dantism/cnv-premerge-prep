@@ -104,7 +104,7 @@ results/
 ---
 
 # Using the Pipeline as a Module
-You can integrate the 4-step structural variant workflow into a bigger Nextflow pipeline as a reusable module.
+You can integrate the 4-step structural variant workflow into a bigger Nextflow pipeline as a **reusable module**.
 Organize your module like this:
 
 ## Put the workflow in a module folder
