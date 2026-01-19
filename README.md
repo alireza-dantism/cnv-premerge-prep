@@ -2,6 +2,13 @@
 
 A Nextflow DSL2 module designed to preprocess and standardize results from various CNV calling packages. It orchestrates a four-step workflow—utilizing Python-based normalization, filtering, and correction scripts—to harmonize data formats and quality before merging multi-caller outputs.
 
+### ⚠️ Caution
+> **Important:**  
+> This workflow is designed to work only with output files from the following tools:  
+> jabCoNtool, cnMOPS, cnvKit, control_freec, ExomeDepth, GATK  
+>
+> Only `.tsv` and `.cns` file formats are supported.
+
 ---
 
 ## Pipeline Overview
