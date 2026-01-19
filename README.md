@@ -99,6 +99,8 @@ If `trace=false`, only the final results are kept and intermediate directories a
 ---
 
 # Using the Pipeline as a Module
+You can integrate the 4-step structural variant workflow into a bigger Nextflow pipeline as a reusable module.
+Organize your module like this:
 
 ## Put the workflow in a module folder
 ```
