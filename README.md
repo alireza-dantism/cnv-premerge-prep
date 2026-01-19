@@ -112,6 +112,8 @@ Organize your module like this:
 modules/
 └── cnv-premerge-prep/
     ├── main.nf           # workflow definition
+    ├── nextflow.config
+    ├── input_files/
     └── bin/              # Python scripts (1_trimming_and_normalization.py, etc.)
 ```
 
