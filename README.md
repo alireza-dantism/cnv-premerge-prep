@@ -40,3 +40,54 @@ project/
 └── README.md
 ```
 
+- All Python scripts are in `bin/`  
+- Input files go in `input_files/`  
+- Outputs are published in `results/`  
+
+---
+
+## Configuration
+
+**`nextflow.config`** defines default parameters:
+
+```groovy
+params {
+    input_dir = "input_files"   // Directory with input files
+    trace     = false            // true = keep all intermediate results, false = keep only final results
+}
+```
+
+## Running the Pipeline
+
+# Basic run using defaults
+nextflow run main.nf
+
+# Override input directory and trace
+nextflow run main.nf --input_dir input_files --trace true
+
+# Resume previous run
+nextflow run main.nf -resume
+
+
+## Result
+Final results are stored in:
+```
+results/
+```
+
+If trace=true, intermediate directories are preserved:
+```text
+results/
+├── 1_trimming_and_normalization/
+├── 2_column_filtering/
+├── 3_cn_rounding_and_corrections/
+└── 4_final_results/
+```
+
+If trace=false, only the final results are kept and intermediate directories are removed.
+
+
+
+
+
+
