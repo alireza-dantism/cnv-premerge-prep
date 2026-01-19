@@ -75,7 +75,7 @@ Final results are stored in:
 results/
 ```
 
-If trace=true, intermediate directories are preserved:
+If `trace=true`, intermediate directories are preserved:
 ```text
 results/
 ├── 1_trimming_and_normalization/
@@ -84,7 +84,7 @@ results/
 └── 4_final_results/
 ```
 
-If trace=false, only the final results are kept and intermediate directories are removed.
+If `trace=false`, only the final results are kept and intermediate directories are removed.
 
 
 
