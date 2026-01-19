@@ -59,7 +59,6 @@ params {
 ## Before running the pipeline
 You should ensure all scripts in bin/ are executable:
 ```
-# Make all Python scripts executable
 chmod +x bin/*.py
 ```
 
