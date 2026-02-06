@@ -108,6 +108,14 @@ results/
 ├── sample_2.cns
 └── sample_3.tsv
 ```
+
+The naming of the result files are reflected their directory structure. 
+For example:
+```
+folder1/sub_folder2/file.tsv → folder1_sub_folder2_file.tsv
+file.tsv → file.tsv
+```
+
 ---
 
 # Using the Pipeline as a Module
